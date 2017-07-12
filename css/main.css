@@ -56,27 +56,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*********************GENERALE**********************************
+******************************************************************/
 
+body {
+  background-color: black;
+}
 
+#carousel {
+  max-width: 800px;
+  margin: auto;
+}
 
+img {
+  width: 100%;
+  height: auto;
+}
 
+h2 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  color: rgb(66, 65, 61);
+}
 
-
-
-
-
-
-
-
+.text {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+/*********TABLETTE***********************************************
+***************************************************************/
+@media only screen and (min-width: 768px) {
+
+  h2 {
+    font-size: 40px
+  }
+
+  img {
+    height: 500px;
+  }
+
+  .text {
+    bottom: 420px;
+  }
+
 
 }
+
+/************************DESKTOP********************************
+*******************************************************************/
+
+@media only screen and (min-width: 992px) {
+
+.text {
+  bottom: 60px;
+}
+}
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
